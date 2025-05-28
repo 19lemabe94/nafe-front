@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#EEEEEE;
+    color:#121526 ;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh; /* cada seção ocupa a tela toda */
+    width: 100vw;
+    text-align: center;
+    border: 1px solid;
+}
+header {
+    padding: 20px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+header img {
+    height: 30px;
+    margin-right: 1vw;
+}
+
+
+nav ul {
+    list-style: none; /* remove os marcadores */
+    padding: 0 0 0 30px;
+    margin: 0;
+    display: flex;
+    gap: 10px; /* espaço entre os itens */
+    font-family: "Orbitron" , sans-serif;
+    
+    
+}
+
+nav ul li a {
+    color: #121526; /* cor dos links */
+    text-decoration: none;
+    font-size: 11px;
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline; /* efeito hover */
+    color:#9AA8CD ;
+}
+
+h1 {
+    font-family: "Orbitron" , sans-serif;
+    margin: 10px 0 10px 10px;
+    display: inline-block;
+    font-size: 20px;
+    
+}
