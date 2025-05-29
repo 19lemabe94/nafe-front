@@ -25,7 +25,7 @@ section h1 {
 
 header {
     padding: 20px;
-    height: 5vh;
+    height: auto;
     display: flex;
     justify-content: center;  
     align-items: center;
@@ -39,6 +39,10 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding: 0 0 10px 0;
+    position: sticky;
+    background-color: #EEEEEE;
+    z-index: 999;
+    top: 0;
 }
 
 header img {
@@ -61,7 +65,7 @@ nav ul {
 nav ul li a {
     color: #121526; /* cor dos links */
     text-decoration: none;
-    font-size: 11px;
+    font-size: 17px;
 }
 
 
@@ -73,8 +77,8 @@ nav ul li a:hover {
 h1 {
     font-family: "Orbitron" , sans-serif;
     margin: 10px 0 10px 10px;
-    display: inline-block;
-    font-size: 20px;
+    font-size: 40px;
+    
     
 }
 
@@ -92,8 +96,15 @@ h1 {
 }
 
 
-ul {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+
+footer {
+    height: 15vh;
+    border: 1px solid;
+    background-color: #121526;
+    color: #EEEEEE;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 10px 0 0 0;
+    
 }
