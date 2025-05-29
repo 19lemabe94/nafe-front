@@ -17,11 +17,16 @@ section {
     height: 100vh; /* cada seção ocupa a tela toda */
     width: 100vw;
     text-align: center;
-    border: 1px solid;
+    
 }
+
+section h1 {
+    margin-top: 40px;
+}
+
 header {
     padding: 20px;
-    height: 15vh;
+    height: 5vh;
     display: flex;
     justify-content: center;  
     align-items: center;
@@ -29,15 +34,23 @@ header {
     
 }
 
+nav {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 10px 0;
+}
+
 header img {
     height: 30px;
-    margin-right: 1vw;
+    margin: 0;
+    padding: 0;
 }
 
 
 nav ul {
     list-style: none; /* remove os marcadores */
-    padding: 0 0 0 30px;
     margin: 0;
     display: flex;
     gap: 10px; /* espaço entre os itens */
@@ -64,4 +77,24 @@ h1 {
     display: inline-block;
     font-size: 20px;
     
+}
+
+#inicio {
+    background-image: url(src/new-images/acoindustria.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* altura de 100% da tela */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: #EEEEEE;
+    border: 1px solid #121526;
+    
+}
+
+
+ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
