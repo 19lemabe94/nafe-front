@@ -21,6 +21,7 @@ section {
 
 section h1 {
     margin-top: 40px;
+    
 }
 
 header {
@@ -91,8 +92,7 @@ h1 {
     display: flex;
     justify-content: center;
     color: #EEEEEE;
-    border: 1px solid #121526;
-    
+    border: 1px solid #121526;  
 }
 
 
@@ -106,5 +106,31 @@ footer {
     flex-direction: row;
     text-align: center;
     padding: 10px 0 0 0;
+}
+
+#sobre {
+    padding: 20px;
+    border: 1px solid;
+    background-color: #121526;
+    color: #EEEEEE;
+}
+#conteiner-esquerdo-sobre{
+    display: flex;
+    width: 50vw;
+    height: 500px;
+    padding: 80px;
+    border: 1px solid #EEEEEE;
+    text-align: left;
+    align-items: top;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif
     
+}
+
+#portifolio {
+    padding: 20px;
+}
+
+#contato {
+    padding-top: 20px;
 }
