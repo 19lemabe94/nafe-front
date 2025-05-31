@@ -1,176 +1,131 @@
-/* 🔄 RESET E VARIÁVEIS */
-:root {
-    --cor-fundo: #EEEEEE;
-    --cor-texto: #121526;
-    --cor-hover: #9AA8CD;
-    --cor-fundo-escuro: #121526;
-}
-
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Cabeçalho fixo */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    z-index: 1000;
+}
+
+.header img {
+    height: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
     font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
 }
 
-/* 🔲 CLASSES UTILITÁRIAS */
-.borda {
-    border: 1px solid var(--cor-texto);
+.nav a:hover {
+    opacity: 0.6;
 }
 
-/* 🏗️ LAYOUT BASE */
-section {
+/* Hero */
+.hero {
+    position: relative;
     height: 100vh;
-    width: 100vw;
+    background: url('src/new-images/acoindustria.avif') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-section h1 {
-    margin-top: 40px;
-    font-size: 40px;
-}
-
-/* 🔝 HEADER E NAV */
-header {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-header img {
-    height: 30px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: var(--cor-fundo);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-nav ul li a {
-    color: var(--cor-texto);
-    text-decoration: none;
-    font-size: 17px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-    color: var(--cor-hover);
-}
-
-/* 🏠 SEÇÃO INÍCIO COM SOBREPOSIÇÃO */
-#inicio {
-    background-image: url(src/new-images/acoindustria.avif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--cor-fundo);
-    position: relative;
-}
-
-#inicio::after {
+.hero::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(18, 21, 38, 0.6);
-    z-index: 0;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); /* Escurece a imagem */
 }
 
-#inicio h1 {
+.hero-content {
     position: relative;
     z-index: 1;
 }
 
-/* 📄 SEÇÃO SOBRE */
-#sobre {
-    padding: 20px;
-    background-color: var(--cor-fundo-escuro);
-    color: var(--cor-fundo);
+.hero-content h1 {
+    font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
 }
 
-#conteiner-esquerdo-sobre {
-    display: flex;
-    width: 50vw;
-    height: 500px;
-    padding: 80px;
-    border: 1px solid var(--cor-fundo);
-    text-align: left;
-    align-items: flex-start;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+.hero-content p {
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
-
-/* 🗂️ SEÇÃO PORTFÓLIO */
-#portifolio {
-    padding: 20px;
-}
-
-/* ✉️ SEÇÃO CONTATO */
-#contato {
-    padding-top: 20px;
-}
-
-/* 🔚 FOOTER */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+/* Seções */
+.section {
+    padding: 100px 20px;
     text-align: center;
-    height: 15vh;
-    background-color: var(--cor-fundo-escuro);
-    color: var(--cor-fundo);
-    padding: 10px 0;
 }
 
-/* 📱 RESPONSIVIDADE */
+.section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.section.dark {
+    background-color: #121526;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #000;
+    color: #888;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
-    section {
-        height: auto;
+    .header {
+        padding: 15px 30px;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 5px;
+    .nav ul {
+        gap: 20px;
     }
 
-    #conteiner-esquerdo-sobre {
-        width: 90vw;
-        height: auto;
-        padding: 20px;
+    .hero-content h1 {
+        font-size: 2rem;
     }
 
-    header {
-        flex-direction: column;
+    .section h2 {
+        font-size: 2rem;
     }
 }

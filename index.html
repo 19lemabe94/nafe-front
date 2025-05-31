@@ -1,85 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nafé Serralheria Inox</title>
-
-    <!-- SEO -->
-    <meta name="description" content="Nafé Serralheria Inox - Mestres na transformação de metais. Portfólio, informações e contato.">
-    <meta name="author" content="Nafé Serralheria Inox">
-
-    <!-- CSS -->
+    <title>NAFÉ Serralheria Inox</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@100..900&family=Share+Tech&display=swap" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="icon" href="src/ARUIVOS DE LOGO/00 IMAGENS/(PNG) LOGO SEM FUNDO/NAFÉ 1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- 🔝 Cabeçalho -->
-    <header>
-        <a href="#inicio">
-            <img src="src/ARUIVOS DE LOGO/00 IMAGENS/(PNG) LOGO SEM FUNDO/NAFÉ 1.png" alt="Logo da Nafé Serralheria Inox">
-        </a>
+    <!-- 🔝 Cabeçalho com menu fixo -->
+    <header class="header">
+        <div class="logo">
+            <img src="src/ARUIVOS DE LOGO/00 IMAGENS/(PNG) LOGO SEM FUNDO/NAFÉ 3.png" alt="Logo Nafé">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">INÍCIO</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#portifolio">PORTFÓLIO</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- 🔗 Navegação -->
-    <nav aria-label="Menu principal">
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#portifolio">Portfólio</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+    <!-- 🔥 Hero Section estilo SpaceX -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>MESTRES NA TRANSFORMAÇÃO DO AÇO INOX</h1>
+            <p>NAFÉ SERRALHERIA INOX</p>
+        </div>
+    </section>
 
-    <!-- 🏗️ Conteúdo Principal -->
-    <main>
+    <!-- 🛰️ Sobre -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>SOBRE NÓS</h2>
+            <p>
+                Pensar em metalurgia é pensar em algo sólido, firme e eterno.<br>
+                O nome <strong>"NA FÉ"</strong> carrega nossa missão: 
+                trabalhar com a mesma força e firmeza que a fé representa.<br>
+                Somos especialistas na transformação do inox em obras de qualidade e resistência.
+            </p>
+        </div>
+    </section>
 
-        <!-- Seção Início -->
-        <section id="inicio">
-            <h1>Mestres da Transformação dos Metais</h1>
-        </section>
+    <!-- 🚀 Portfólio -->
+    <section id="portifolio" class="section dark">
+        <div class="container">
+            <h2>PORTFÓLIO</h2>
+            <p>Veja nossos projetos e trabalhos em aço inox sob medida.</p>
+            <!-- Aqui depois você pode inserir um grid de fotos dos seus trabalhos -->
+        </div>
+    </section>
 
-        <!-- Seção Sobre -->
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <div class="conteudo-sobre">
-                <p>
-                    Pensar em metalurgia é pensar em algo sólido, algo firme.<br>
-                    O nome <strong>"NA FÉ"</strong> nos fez refletir bastante na hora da criação.<br>
-                    Fé é algo que, embora invisível, é firme e sólido.
-                </p>
-            </div>
-        </section>
-
-        <!-- Seção Portfólio -->
-        <section id="portifolio">
-            <h2>Portfólio</h2>
-            <p>Em breve, nossos projetos estarão disponíveis aqui.</p>
-        </section>
-
-        <!-- Seção Contato -->
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco pelo WhatsApp, telefone ou e-mail.</p>
-        </section>
-
-    </main>
+    <!-- 📡 Contato -->
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>CONTATO</h2>
+            <p>Fale conosco pelo WhatsApp ou e-mail.<br>
+            <a href="mailto:contato@nafeinox.com.br">contato@nafeinox.com.br</a></p>
+        </div>
+    </section>
 
     <!-- 🔚 Rodapé -->
-    <footer>
-        <p>"Tudo posso naquele que me fortalece."</p>
+    <footer class="footer">
+        <p>&copy; 2025 NAFÉ Serralheria Inox | Tudo posso naquele que me fortalece.</p>
     </footer>
 
 </body>
-
 </html>
