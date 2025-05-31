@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAFÉ Serralheria Inox</title>
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Favicon opcional -->
+    <link rel="icon" href="src/ARQUIVOS DE LOGO/favicon.png" type="image/png">
 </head>
 
 <body>
 
-    <!-- 🔝 Cabeçalho com menu fixo -->
+    <!-- 🔝 Header -->
     <header class="header">
         <div class="logo">
             <img src="src/ARUIVOS DE LOGO/00 IMAGENS/(PNG) LOGO SEM FUNDO/NAFÉ 3.png" alt="Logo Nafé">
         </div>
         <nav class="nav">
-            <ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul id="nav-menu">
                 <li><a href="#inicio">INÍCIO</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
                 <li><a href="#portifolio">PORTFÓLIO</a></li>
@@ -25,7 +35,7 @@
         </nav>
     </header>
 
-    <!-- 🔥 Hero Section estilo SpaceX -->
+    <!-- 🚀 Hero -->
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h1>MESTRES NA TRANSFORMAÇÃO DO AÇO INOX</h1>
@@ -33,7 +43,7 @@
         </div>
     </section>
 
-    <!-- 🛰️ Sobre -->
+    <!-- 🏗️ Sobre -->
     <section id="sobre" class="section">
         <div class="container">
             <h2>SOBRE NÓS</h2>
@@ -46,28 +56,30 @@
         </div>
     </section>
 
-    <!-- 🚀 Portfólio -->
+    <!-- 🖼️ Portfólio -->
     <section id="portifolio" class="section dark">
         <div class="container">
             <h2>PORTFÓLIO</h2>
             <p>Veja nossos projetos e trabalhos em aço inox sob medida.</p>
-            <!-- Aqui depois você pode inserir um grid de fotos dos seus trabalhos -->
+            <!-- 🔧 Grid de imagens pode ser adicionado aqui futuramente -->
         </div>
     </section>
 
-    <!-- 📡 Contato -->
+    <!-- 📞 Contato -->
     <section id="contato" class="section">
         <div class="container">
             <h2>CONTATO</h2>
-            <p>Fale conosco pelo WhatsApp ou e-mail.<br>
+            <p>Fale conosco pelo WhatsApp ou e-mail:<br>
             <a href="mailto:contato@nafeinox.com.br">contato@nafeinox.com.br</a></p>
         </div>
     </section>
 
-    <!-- 🔚 Rodapé -->
+    <!-- 🔚 Footer -->
     <footer class="footer">
         <p>&copy; 2025 NAFÉ Serralheria Inox | Tudo posso naquele que me fortalece.</p>
     </footer>
 
+    <!-- 📜 JavaScript -->
+    <script src="scripts.js"></script>
 </body>
 </html>
