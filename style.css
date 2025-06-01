@@ -98,13 +98,17 @@ html {
 .hero-content p {
     margin-top: 20px;
     font-size: 1.2rem;
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
 }
 
-/* Seções */
+                       /* Seções */
 .section {
     padding: 100px 20px;
     text-align: center;
+    height: 100vh;
 }
+
 
 .section h2 {
     font-family: 'Orbitron', sans-serif;
@@ -122,6 +126,70 @@ html {
 .section.dark {
     background-color: #121526;
 }
+
+/* --------------------- */
+/* SOBRE */
+/* --------------------- */
+.sobre-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px 50px;
+    flex-wrap: wrap; /* Para permitir quebra em telas pequenas */
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.sobre-content .texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sobre-content .texto .box {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sobre-content .texto h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+}
+
+.sobre-content .texto p {
+    line-height: 1.7;
+}
+
+.sobre-content .imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-content .imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+}
+
+
+
+
 
 /* Rodapé */
 .footer {
@@ -182,4 +250,19 @@ html {
 
 .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* --------------------- */
+/* RESPONSIVO SOBRE */
+/* --------------------- */
+@media (max-width: 992px) {
+    .sobre-section {
+        flex-direction: column;
+        padding: 80px 20px;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
