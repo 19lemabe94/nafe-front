@@ -1,0 +1,28 @@
+# Sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs
+*.log
+
+# Cache / builds
+.cache/
+dist/
+build/
+tmp/
+temp/
+
+# Configs de editor
+.idea/
+.vscode/
+
+# Arquivos temporários
+*.swp
+*.bak
+*.tmp
+
+# Arquivos compactados
+*.zip
+*.rar
+*.7z

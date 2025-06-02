@@ -5,10 +5,12 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #000;
     color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
 
 html {
@@ -16,6 +18,10 @@ html {
 }
 
 /* Cabeçalho fixo */
+.header.scrolled {
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
 .header {
     position: fixed;
     top: 0;
@@ -30,6 +36,22 @@ html {
 
 .logo img {
     height: 50px;
+}
+
+/*  Estilo do botão teste   */
+.button {
+    margin-top: 10%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: darkgreen;
 }
 
 /* Navegação padrão (desktop) */
@@ -106,7 +128,7 @@ html {
 .section {
     padding: 100px 20px;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -123,9 +145,9 @@ html {
     font-size: 1.1rem;
 }
 
-.section.dark {
-    background-color: #121526;
-}
+
+
+
 
 /* --------------------- */
 /* SOBRE */
@@ -154,6 +176,25 @@ html {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+#texto-titulo-sobre {
+   font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+#texto-titulo-sobre::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 10px auto 0;
 }
 
 .sobre-content .texto .box {
@@ -191,6 +232,8 @@ html {
 
 
 
+
+
 /* Rodapé */
 .footer {
     background-color: #000;
@@ -203,6 +246,12 @@ html {
 /* --------------------- */
 /* Responsivo Mobile */
 /* --------------------- */
+
+@media (max-width: 768px) {
+    #texto-titulo-sobre {
+        font-size: 1.8rem;
+    }
+}
 
 @media (max-width: 768px) {
     .nav ul {
