@@ -23,38 +23,62 @@ Este projeto é uma interface frontend moderna, responsiva e otimizada, constru�
 
    ```bash
    git clone https://github.com/19lemabe94/nafe-front.git
-Acesse a pasta do projeto:
+2. **Acesse a pasta do projeto:**
+    ```bash
+    cd nafe-front
 
+3. **Abra o arquivo index.html no navegador, ou use uma extensão como Live Server no VS Code para melhor experiência:**
 
-cd nafe-front
-Abra o arquivo index.html no navegador, ou use uma extensão como Live Server no VS Code para melhor experiência:
+4. **No VS Code: clique com o botão direito no arquivo index.html → Open with Live Server**
 
-No VS Code: clique com o botão direito no arquivo index.html → Open with Live Server
+---
 
-🤝 Como Contribuir
-Faça um fork deste repositório.
-
-Crie uma branch para sua feature:
-
-bash
-Copy
-Edit
+## 🤝 Como Contribuir
+1. **Faça um fork deste repositório.**
+2. **Crie uma branch para sua feature:**
+```
 git checkout -b feature/nome-da-feature
-Faça suas modificações e commit:
-
-bash
-Copy
-Edit
+```
+3. **Faça suas modificações e commit:**
+```
 git commit -m "Descrição da feature adicionada"
-Envie sua branch para seu fork:
-
-bash
-Copy
-Edit
+```
+4. **Envie sua branch para seu fork:**
+```
 git push origin feature/nome-da-feature
-Abra um Pull Request neste repositório.
+```
+5. **Abra um Pull Request neste repositório.**
 
-📜 Licença
+
+
+---
+
+## Estrutura do projeto
+
+```
+nafe-front/
+├── index.html          # Página principal
+├── style.css           # Estilos principais
+├── scripts.js          # Script JS para interatividade
+├── src/                # Imagens, vídeos e outros assets
+│   ├── ARQUIVOS DE LOGO/
+│   ├── new-images/
+│   └── video.mp4       # Vídeo usado no hero
+└── README.md           # Documentação do projeto```
+```
+## 📜 Licença
 Este projeto está licenciado sob a licença MIT.
 Veja o arquivo LICENSE para mais detalhes.
 
+---
+
+## ✨ Autor
+Leonardo Bezerra:
+
+[GITHUB](https://github.com/19lemabe94) | [LinkedIn](https://www.linkedin.com/in/leonardo-bezerra-98b05a307/)
+
+
+## ⚠️ Aviso Importante
+Este projeto foi desenvolvido para o cliente real Nafé Serralheria. O código está disponível publicamente para fins de transparência e aprendizado, mas o uso comercial e redistribuição do conteúdo audiovisual, textos e imagens devem respeitar os direitos do cliente.
+
+Caso queira reutilizar este código para outros projetos, adapte-o para sua necessidade e respeite a propriedade intelectual do cliente.
