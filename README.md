@@ -1,27 +1,60 @@
-# Projeto de frontend  nafe serralheria , bem vindo !
+# 🔧 Nafé - Serralheria Frontend
 
-## 📜 Descrição
-Este é um projeto de **Frontend** desenvolvido para a **NAFÉ Serralheria Inox**, uma empresa especializada na fabricação de produtos em aço inox sob medida.
+Site institucional desenvolvido para a empresa **Nafé Serralheria**, especialista na transformação de metais com foco em qualidade, resistência e excelência.
 
-O objetivo do site é apresentar a empresa, seus serviços e portfólio de projetos, além de fornecer canais de contato para os clientes.
+Este projeto é uma interface frontend moderna, responsiva e otimizada, construída com HTML, CSS e JavaScript puro, incluindo vídeo em background para a seção Hero.
 
-O site é responsivo, moderno, com design inspirado na estética clean e tecnológica da SpaceX, utilizando HTML, CSS e JavaScript puro.
+---
 
-## 🚀 Funcionalidades
-- Menu fixo e responsivo
-- Seção hero com imagem de fundo
-- Sessões de Sobre, Portfólio e Contato
-- Menu hambúrguer para dispositivos móveis
-- Design adaptável para telas de diversos tamanhos
+## 🚀 Tecnologias Utilizadas
+
+- **HTML5 semântico**
+- **CSS3** com design responsivo
+- **JavaScript Vanilla**
+- Fonte personalizada **Orbitron**
+- Vídeo MP4 em background na seção **Hero**
+- Layout adaptado para **desktop, tablet e mobile**
+
+---
+
+## 💻 Como Rodar Localmente
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/19lemabe94/nafe-front.git
+Acesse a pasta do projeto:
 
 
-## 🛠️ Tecnologias
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+cd nafe-front
+Abra o arquivo index.html no navegador, ou use uma extensão como Live Server no VS Code para melhor experiência:
 
-## 🎯 Como Rodar
+No VS Code: clique com o botão direito no arquivo index.html → Open with Live Server
 
-## 🤝 Contribuição
+🤝 Como Contribuir
+Faça um fork deste repositório.
 
-## 📝 Licença
+Crie uma branch para sua feature:
+
+bash
+Copy
+Edit
+git checkout -b feature/nome-da-feature
+Faça suas modificações e commit:
+
+bash
+Copy
+Edit
+git commit -m "Descrição da feature adicionada"
+Envie sua branch para seu fork:
+
+bash
+Copy
+Edit
+git push origin feature/nome-da-feature
+Abra um Pull Request neste repositório.
+
+📜 Licença
+Este projeto está licenciado sob a licença MIT.
+Veja o arquivo LICENSE para mais detalhes.
+
