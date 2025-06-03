@@ -31,7 +31,7 @@
             <ul id="nav-menu">
                 <li><a href="#inicio">INÍCIO</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
-                <li><a href="#portifolio">PORTFÓLIO</a></li>
+                <li><a href="#portfolio">PORTFÓLIO</a></li>
                 <li><a href="#contato">CONTATO</a></li>
             </ul>
         </nav>
@@ -79,16 +79,46 @@
             
         </div>
     </section>
+<!-- 🚀 Seção Portfólio com Slider -->
+<section id="portfolio" class="section portfolio-section">
+    <h2 class="titulo-portfolio">NOSSO PORTFÓLIO</h2>
+    <p class="subtitulo-portfolio">Projetos realizados pela Nafé Serralheria</p>
 
-    <!-- 🖼️ Portfólio -->
-    <section id="portifolio" class="section">
-        <div class="container">
-            <h2>PORTFÓLIO</h2>
-            <p>Veja nossos projetos e trabalhos em aço inox sob medida.</p>
-            <!-- 🔧 Grid de imagens pode ser adicionado aqui futuramente -->
+    <div class="slider-container">
+        <button class="slider-btn prev">&#10094;</button>
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="src/portfolio/4.jpg" alt="Portão de aço industrial">
+                <div class="portfolio-info">
+                    <h3>Portão Industrial</h3>
+                    <p>Fabricação e instalação de portão deslizante reforçado.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="src/portfolio/2.jpg" alt="Estrutura metálica cobertura">
+                <div class="portfolio-info">
+                    <h3>Estrutura Metálica</h3>
+                    <p>Cobertura metálica para galpão, feita sob medida.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="src/portfolio/3.jpg" alt="Corrimão inox sob medida">
+                <div class="portfolio-info">
+                    <h3>Corrimão Inox</h3>
+                    <p>Corrimão moderno em inox para residência.</p>
+                </div>
+            </div>
+
+            <!-- Adicione mais slides conforme desejar -->
         </div>
-    </section>
-
+        <button class="slider-btn next">&#10095;</button>
+    </div>
+</section>
     <!-- 📞 Contato -->
     <section id="contato" class="section">
         <div class="container">
@@ -98,7 +128,6 @@
             <a href="mailto:contato@nafeinox.com.br">contato@nafeinox.com.br</a></p>
         </div>
     </section>
-
     <!-- 🔚 Footer -->
     <footer class="footer">
         <p>&copy; 2025 NAFÉ Serralheria Inox | Tudo posso naquele que me fortalece.</p>
