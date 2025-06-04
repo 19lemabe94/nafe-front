@@ -43,3 +43,39 @@ window.addEventListener('scroll', function() {
     });
 
     window.addEventListener('resize', updateSlider);
+
+
+/* VALIDADOR DE FORMULARIO  */
+    const form = document.querySelector('.form-contato');
+
+    form.addEventListener('submit', function (e) {
+        const nome = form.querySelector('input[name="nome"]');
+        const email = form.querySelector('input[name="email"]');
+        const mensagem = form.querySelector('textarea[name="mensagem"]');
+
+        let erros = [];
+
+        if (nome.value.trim() === '') {
+            erros.push('Por favor, preencha seu nome.');
+        }
+
+        if (email.value.trim() === '') {
+            erros.push('Por favor, preencha seu email.');
+        } else if (!validarEmail(email.value)) {
+            erros.push('Digite um email válido.');
+        }
+
+        if (mensagem.value.trim() === '') {
+            erros.push('Por favor, escreva sua mensagem.');
+        }
+
+        if (erros.length > 0) {
+            e.preventDefault();
+            alert(erros.join('\n'));
+        }
+    });
+
+    function validarEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }

@@ -461,3 +461,97 @@ html {
         font-size: 1.5rem;
     }
 }
+
+/* 🔥 Contato */
+.contato-section {
+    padding: 80px 20px;
+    background-color: #000;
+    color: white;
+}
+
+.titulo-contato {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.contato-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contato-mapa {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    max-height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.form-contato {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 8px;
+}
+
+.form-contato input::placeholder,
+.form-contato textarea::placeholder {
+    color: #aaa;
+}
+
+.form-contato textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+.form-contato button {
+    padding: 12px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-contato button:hover {
+    background: #666;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 768px) {
+    .contato-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato-mapa {
+        width: 100%;
+        max-width: 500px;
+        height: 250px;
+        max-height: 250px;
+    }
+
+    .form-contato {
+        width: 100%;
+        max-width: 500px;
+    }
+}
