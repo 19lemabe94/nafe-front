@@ -79,3 +79,30 @@ window.addEventListener('scroll', function() {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
     }
+
+    /*   DETECÇAO Da Seção contato  */
+
+const whatsappButton = document.querySelector('.whatsapp-button');
+const contatoSection = document.querySelector('#contato');
+
+function checkContatoVisibility() {
+    const rect = contatoSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    const isVisible = rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2;
+
+    if (isVisible) {
+        if (!contatoSection.contains(whatsappButton)) {
+            contatoSection.appendChild(whatsappButton);
+        }
+        whatsappButton.classList.add('in-contato');
+    } else {
+        if (!document.body.contains(whatsappButton)) {
+            document.body.appendChild(whatsappButton);
+        }
+        whatsappButton.classList.remove('in-contato');
+    }
+}
+
+window.addEventListener('scroll', checkContatoVisibility);
+window.addEventListener('load', checkContatoVisibility);
