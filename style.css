@@ -662,3 +662,44 @@ html {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 
 }
+
+
+/* 🔥 Footer - Ícones de Redes Sociais */
+
+.footer {
+    padding-top: 40px; /* Aumenta um pouco o padding para dar espaço aos ícones */
+    padding-bottom: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-bottom: 25px; /* Espaço entre os ícones e o texto de copyright */
+}
+
+.social-icons a {
+    color: #888; /* Cor inicial dos ícones, um cinza sutil */
+    font-size: 1.2rem; /* Tamanho do ícone */
+    
+    /* Cria o círculo em volta do ícone */
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333; /* Borda do círculo, um cinza escuro */
+    border-radius: 50%; /* Deixa a borda perfeitamente redonda */
+    text-decoration: none;
+    
+    /* Efeito de transição suave */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito elegante ao passar o mouse */
+.social-icons a:hover {
+    color: #fff; /* Ícone fica branco */
+    border-color: #fff; /* Borda fica branca */
+    transform: translateY(-5px); /* Eleva o ícone um pouco */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Adiciona um brilho sutil */
+}
