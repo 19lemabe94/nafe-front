@@ -404,62 +404,75 @@ html {
     font-size: 0.9rem;
 }
 */
+/* CSS DOS SERVIÇOS - ESTILO INTEGRADO (AJUSTADO) */
 
-/* CSS DOS SERVIÇOS - ESTILO INTEGRADO */
-
-.titulo-servico{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.8rem;
-    margin-bottom: 40px;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 2px;
-    position: relative;
+/* Estilo para a seção principal (agora mais simples) */
+.servicos {
+    padding: 100px 20px;
+    background-color: #000;
+    text-align: center; /* Garante que o título seja centralizado */
 }
 
-.servicos {
+/* Estilo para o novo título (pode copiar o estilo de outros títulos) */
+.titulo-servicos {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 50px; /* Espaço entre o título e os boxes */
+    color: #fff;
+}
+
+/* O container dos boxes agora é quem tem o flex */
+.servicos-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* Mesmo espaçamento da seção "Sobre" */
-    padding: 100px 20px; /* Padding padrão das outras seções */
-    background-color: #000; /* Fundo escuro padrão */
+    gap: 30px; 
 }
 
+/* O estilo do .servico-box individual continua o mesmo */
 .servico-box {
-    background-color: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 25px;
     border-radius: 12px;
-    backdrop-filter: blur(4px); /* Efeito de vidro fosco */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     width: 320px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+    text-align: left; /* Alinha o texto dos boxes à esquerda para melhor leitura da lista */
 }
 
+/* O hover também continua igual */
 .servico-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.7); /* Sombra ao passar o mouse */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
 }
 
+/* O h3 e a lista também continuam iguais */
 .servico-box h3 {
-    font-family: 'Orbitron', sans-serif; /* Pega a fonte do título das outras seções */
+    font-family: 'Orbitron', sans-serif;
     color: #fff;
     font-size: 1.5rem;
     margin-bottom: 20px;
-    text-align: center; /* Centraliza o título do box */
+    text-align: center;
 }
 
 .servico-box ul {
-    list-style-position: inside; /* Coloca os marcadores para dentro */
+    list-style-position: inside;
     padding-left: 0;
-    color: #ccc; /* Cor mais suave para o texto */
+    color: #ccc;
 }
 
 .servico-box ul li {
     margin-bottom: 10px;
     font-size: 1rem;
     line-height: 1.6;
+}
+
+
+@media (max-width: 480px) {
+    .titulo-servicos {
+        font-size: 2rem;
+    }
 }
 
 
