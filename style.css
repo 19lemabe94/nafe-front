@@ -362,10 +362,10 @@ html {
 }
 
 .slide {
-    min-width: 50%;
-    min-height: 50vh;
-    max-width: 70%;
-    max-height: 70vh;
+    min-width: 60%;
+    min-height: 60vh;
+    max-width: 80%;
+    max-height: 80vh;
     box-sizing: border-box;
     padding: 10px;
     display: flex;
